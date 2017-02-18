@@ -1,0 +1,27 @@
+.container-fluid {
+    padding: 0px;
+}
+
+.navbar {
+    background:transparent;
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    left: 33%;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #555;
+}
+.me-active {
+    color: #555 !important;
+}

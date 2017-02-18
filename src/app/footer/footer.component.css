@@ -1,0 +1,7 @@
+footer {
+    width: 100%;
+    min-height: 150px; 
+}
+footer > h4 {
+    padding-top: 3em;
+}

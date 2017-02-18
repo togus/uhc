@@ -1,0 +1,38 @@
+<div class="col-xs-offset-2 col-xs-8 padme">
+<table id="myTable" class="table table-hover">
+  <thead>
+  <tr>
+  <th>Nickname</th>
+  <th>Score</th>
+  <th>Wins(Dead)</th>
+  <th>Kills</th>
+  <th>Deaths</th>
+  <th>K/D</th>
+  <th>Games</th>
+  <th>Place</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let player of players">
+      <td>{{ player.nickname }}</td>
+      <td>{{ player.score }}</td>
+      <td>{{ player.wins }} ({{ player.dead_wins }})</td>
+      <td>{{ player.kills }}</td>
+      <td>{{ player.deaths }}</td>
+      <td>{{ player.kd }}</td>
+      <td>{{ player.games }}</td>
+      <td>{{ player.place }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<link href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css">
+
+<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('#myTable').DataTable();
+});
+</script>

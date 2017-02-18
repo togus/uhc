@@ -1,0 +1,13 @@
+<div class="row players">
+  <div class="_{{i+1}}" 
+  [class.col-xs-12]="i == 0"
+  [class.col-xs-7]="i == 1"
+  [class.col-xs-5]="i == 2"
+  [class.col-xs-4]="i > 2 && i < 6"
+  [class.col-xs-3]="i > 5"
+  *ngFor="let place of placeStrings; let i = index;">
+    <span>{{placeStrings[i]}}
+      <p *ngIf="players" [class.sizeme]="i == 0"> {{ getPlayerByPlacement(i+1).nickname }}</p>
+    </span>
+  </div>
+</div>

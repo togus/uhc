@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Uhc</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <style type="text/css">
+  body > header { 
+      text-align: center;
+  }
+  a {
+      color: inherit; /* blue colors for links too */
+      text-decoration: inherit; /* no underline */
+  }
+  body > header > nav > ul {
+      text-transform: uppercase;
+      font-size: 2em;
+      font-weight: bold;
+      color: #000;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  .header-list > li {
+      display: inline-block;
+      list-style: none;
+  }
+
+  .header-list > li:nth-child(n+1) {
+      margin-left: 2em;
+  }
+
+  .players {
+      color: #fff;
+      font-family: Arial,Helvetica,sans-serif;
+      font-size: 4em;
+      font-weight: 700;
+      text-align: center;
+            vertical-align:middle;
+      display: inline-block;
+
+  }
+
+  #first {
+      background-color: #4696e5;
+      height: 500px;
+      border-bottom-width: 4px;
+      border-bottom-color: #282b34;
+      border-bottom-style: solid;
+  }
+  #first > span { 
+      position: relative;
+      top: 10%;
+  }
+  #first > span > p {
+      font-size: 2em;
+  }
+
+  .players > div > p {
+      font-size: 1em;
+  }
+  #second {
+      height: 250px;
+      background-color: #312450;
+      border-bottom-width: 4px;
+      border-bottom-color: #282b34;
+      border-bottom-style: solid;
+      border-right-width: 4px;
+      border-right-color: #282b34;
+      border-right-style: solid;
+  }
+  #third {
+      height: 250px;
+      background-color: #f56a6a;
+      border-bottom-width: 4px;
+      border-bottom-color: #282b34;
+      border-bottom-style: solid;
+  }
+  #fourth {
+       height: 200px;
+       background-color: #e97770;
+       border-right-width: 4px;
+       border-right-color: #282b34;
+       border-right-style: solid;
+  }
+  #fifth {
+      height: 200px;
+      background-color: #5e42a6;
+      border-right-width: 4px;
+      border-right-color: #282b34;
+      border-right-style: solid;
+  }
+  #sixth {
+      height: 200px;
+      background-color: #714646;
+  }
+.players>div {
+      border-bottom-width: 4px;
+      border-bottom-color: #282b34;
+      border-bottom-style: solid;
+  }
+  .players>div:nth-child(n+7) {
+      height: 170px;
+      background-color: #676d79;
+      border-right-width: 4px;
+      border-right-color: #282b34;
+      border-right-style: solid;
+      border-bottom-width: 1px;
+      border-bottom-color: #282b34;
+      border-bottom-style: solid;
+  }
+  .players>div:nth-child(10) {
+      border-right-style: none;
+  }
+  .players > div> span {
+      margin-top: 200px;
+  }
+  body {
+      background-color: #282b34;
+      color: #999999;
+      text-align: center;
+  }
+  body > footer {
+      width: 100%;
+      min-height: 150px; 
+  }
+  body > footer > h4 {
+      padding-top: 3em;
+  }
+
+  </style>
+</head>
+<body>
+<header class="navbar navbar-fixed-top"><nav>
+    <ul class="header-list">
+    <li><a href="#">Overview</a></li>
+    <li><a href="#">Stats</a></li>
+    <li><a href="#">Games</a></li>
+    <li><a href="#">Players</a></li>
+    </ul>
+</nav></header>
+<div class="container-fluid">
+<div class="row players">
+    <div id="first" class="col-xs-12"><span>Leader<p>Knirch</p></span></div>
+    <div id="second" class="col-xs-7">2nd place<p>Knirch</p></div>
+    <div id="third" class="col-xs-5">3rd place<p>Knirch</p></div>
+    <div id="fourth" class="col-xs-4">4th place<p>Knirch</p></div>
+    <div id="fifth" class="col-xs-4">5th place<p>Knirch</p></div>
+    <div id="sixth" class="col-xs-4">6th place<p>Knirch</p></div>
+    <div id="" class="col-xs-3">7th place<p>Knirch</p></div>
+    <div id="" class="col-xs-3">8th place<p>Knirch</p></div>
+    <div id="" class="col-xs-3">9th place<p>Knirch</p></div>
+    <div id="" class="col-xs-3">10th place<p>Knirch</p></div>
+</div>
+</div>
+<footer><h4>STUFF</h4><div>Made from blood, sweat and tears.</div></footer>
+<script type="javascript">
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!-- <header class="navbar navbar-fixed-top"><nav class="container">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    <div id="navbar" class="navbar-collapse collapse">        
+        <ul class="header-list">
+        <li><a routerLink="/leaderboard">Leaderboard</a></li>
+        <li><a href="#">Statistics</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a routerLink="/players">Players</a></li>
+        </ul>
+    </div>
+</nav></header> -->
+ <nav class="navbar transparent navbar-inverse navbar-fixed-top text-center">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse text-center">
+          <ul class="nav navbar-nav text-center">
+            <li><a routerLinkActive="me-active" routerLink="/leaderboard">Leaderboard</a></li>
+            <li><a routerLinkActive="me-active" routerLink="/statistics">Statistics</a></li>
+            <!--<li routerLinkActive="active"><a routerLink="/games">Games</a></li>
+            <li routerLinkActive="active"><a routerLink="/players">Players</a></li>
+            -->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+<div class="container-fluid">
+<router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>

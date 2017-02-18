@@ -1,0 +1,14 @@
+<p>
+  player-profile works!
+</p>
+<div *ngIf="player">
+<h2>{{ player.nickname }} profile</h2>
+  <div>
+    <div><label>id:</label>{{ player.id}}</div>
+    <div><label>Games:</label>{{ player.gamesPlayed }}</div>
+    <div><label>Kills:</label> {{ player.kills }}</div>
+    <div><label>Deaths:</label> {{ player.deaths }}</div>
+    <div><label>Wins:</label> {{ player.wins }}</div>
+    <div>Description: {{ player.description }}</div>
+  </div>
+</div>
