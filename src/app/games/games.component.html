@@ -1,3 +1,36 @@
-<p>
-  games works!
-</p>
+<div class="padme">
+  <div class="no_row_break btn btn-primary" 
+    *ngFor="let game of gameList" 
+    (click)="onSelect(game)">
+    {{game}}
+  </div>
+  <div *ngIf="selectedGame">
+    <div><h3>Reversed action log</h3></div>
+    <div *ngFor="let action of selectedGame._log.reverse()">
+      {{action.action}} {{action.timestamp}}
+      <div class="no_row_break" *ngIf="action.action == 'server_start'">
+       {{action.version}}</div>
+      <div class="no_row_break" *ngIf="action.action == 'player_join'">
+        {{action.player}} {{action.uuid}}
+      </div>
+      <div class="no_row_break" *ngIf="action.action == 'team_color'">
+        {{action.team}} {{action.color}}
+      </div>
+      <div class="no_row_break" *ngIf="action.action == 'team_members'">
+         {{action.team}} {{action.players}}
+      </div>
+        <div class="no_row_break" *ngIf="action.action == 'player_mode'">
+        {{action.player}} {{action.mode}}
+      </div>
+      <div class="no_row_break" *ngIf="action.action == 'death'">
+        {{action.reason}} {{action.player}}  {{action.killed_by}}
+      </div>
+      <div class="no_row_break" *ngIf="action.action == 'team_win'">
+        {{action.players}} {{action.team}}
+      </div>
+      <div class="no_row_break" *ngIf="action.action == 'survivors'">
+        {{action.players}} {{action.mode}}
+      </div>
+    </div>
+  </div>
+</div>

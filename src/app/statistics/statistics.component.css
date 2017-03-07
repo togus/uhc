@@ -1,7 +1,11 @@
-div {
+table {
     font-size: 2em;
 }
 
 .padme {
     padding-top: 50px;
+}
+
+.info-text {
+    font-size: 1em;
 }

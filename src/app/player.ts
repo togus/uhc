@@ -1,3 +1,4 @@
+/* Defines a players and what stats she has */
 export class Player {
     uuid: string;
     nickname: string;
@@ -7,7 +8,7 @@ export class Player {
     deaths: number;
     kd: number;
     wins: number;
-    dead_wins: number;
+    survived: number;
     place: number;
     //description: string;
 }

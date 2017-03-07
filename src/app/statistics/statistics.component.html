@@ -4,7 +4,7 @@
   <tr>
   <th>Nickname</th>
   <th>Score</th>
-  <th>Wins(Dead)</th>
+  <th>W / S</th>
   <th>Kills</th>
   <th>Deaths</th>
   <th>K/D</th>
@@ -16,7 +16,7 @@
     <tr *ngFor="let player of players">
       <td>{{ player.nickname }}</td>
       <td>{{ player.score }}</td>
-      <td>{{ player.wins }} ({{ player.dead_wins }})</td>
+      <td>{{ player.wins }} / {{ player.survived }}</td>
       <td>{{ player.kills }}</td>
       <td>{{ player.deaths }}</td>
       <td>{{ player.kd }}</td>
@@ -25,10 +25,18 @@
     </tr>
   </tbody>
 </table>
+<div class="info-text">
+  <div>Score - The players total score. (Kill - 1p, Win - 1p, Survived - 1p.)</div>
+  <div>W (Wins) - Number of game the player was on the winning team.</div>
+  <div>S (Survived) - Number of game the player survived to the end.</div>
+  <div>Kills - Number of kills the player ha.</div>
+  <div>K/D - Kill/Death ratio.</div>
+  <div>Games - Number of games the player has played.</div>
+  <div>Place - Placing in the ranking.</div>
+</div>
 </div>
 
 <link href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css">
-
 <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
 <script>

@@ -8,6 +8,7 @@ import { PlayerProfileComponent } from './player-profile/player-profile.componen
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { PlayerService } from './player.service';
 import { PlayersComponent } from './players/players.component';
+import { GameService } from './game.service';
 import { FooterComponent } from './footer/footer.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { GamesComponent } from './games/games.component';
@@ -46,7 +47,7 @@ const routes: Routes = [{
     HttpModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [PlayerService],
+  providers: [PlayerService, GameService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
